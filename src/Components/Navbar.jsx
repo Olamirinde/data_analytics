@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className={`w-full text-3xl font-bold text-[#00df9a] ${nav ? 'invisible' : ''}`}>RANTA,</h1>
+      <h1 className={`w-full text-3xl font-bold text-[#00df9a] ${nav ? 'invisible md:visible' : ''}`}>RANTA,</h1>
       <ul className="hidden md:flex ">
         <li className="p-4">Home</li>
         <li className="p-4">Company</li>
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 h-full w-[30%] border-r-gray-900 bg-[#00300] ease-in-out duration-500"
+            ? "fixed md:hidden left-0 top-0 w-[30%] border-r-gray-900 bg-[#00300] ease-in-out bg-gray-600 bg-opacity-50 backdrop-blur-sm duration-500"
             : "fixed left-[-100%]"
         }
       >
